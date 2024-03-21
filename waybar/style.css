@@ -25,6 +25,7 @@ window#waybar {
 
 #clock {
   color: @rosewater;
+  padding-right: 6px;
 }
 
 #battery {
