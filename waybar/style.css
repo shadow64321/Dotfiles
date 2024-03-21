@@ -1,0 +1,64 @@
+@import 'catppuccin-mocha.css';
+
+* {
+  font-family: 'NerdFonts', 'FiraSans';
+}
+
+window#waybar {
+  background-color: @base;
+}
+
+#hyprland workspaces {
+  color: @red;
+}
+#hyprland {
+  color: @teal;
+}
+
+#tray {
+  color: @blue;
+}
+
+#mpd {
+  color: @peach;
+}
+
+#clock {
+  color: @rosewater;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charghing, #battery.plugged {
+  color: @yellow;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#cpu {
+  color: @mauve;
+}
+
+#disk {
+  color: @maroon;
+}
+
+#memory {
+  color: @pink;
+}
+
+#pulseaudio {
+  color: @green;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#custom-media {
+  color: @lavender;
+}
