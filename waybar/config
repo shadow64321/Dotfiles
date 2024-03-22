@@ -9,7 +9,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "clock"], // tray
     // Modules configuration
-    "wayland/workspaces": {
+    "hyprland/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,

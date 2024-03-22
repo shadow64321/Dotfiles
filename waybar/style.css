@@ -2,6 +2,7 @@
 
 * {
   font-family: 'NerdFonts', 'FiraSans';
+  color: @sky;
 }
 
 window#waybar {
@@ -25,7 +26,7 @@ window#waybar {
 
 #clock {
   color: @rosewater;
-  padding-right: 6px;
+  padding-right: 10px;
 }
 
 #battery {
