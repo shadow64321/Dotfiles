@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 swww init &
-swww img ~/Wallpapers/Sky.jpg &
+swww img Wallpapers/Giyu.jpg &
 
 nm-applet --indicator &
 
