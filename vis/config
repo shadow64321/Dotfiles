@@ -1,4 +1,4 @@
-color.scheme=catppuccin
+color.scheme=colors
 colors.override.terminal=true
 visualizer.spectrum.bar.width=5
 audio.stereo.enabled=false
