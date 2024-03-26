@@ -7,6 +7,6 @@ nm-applet --indicator &
 
 waybar &
 
-pypr &
+# pypr &
 
 dunst
