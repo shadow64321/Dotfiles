@@ -1,0 +1,6 @@
+color.scheme=catppuccin
+colors.override.terminal=true
+visualizer.spectrum.bar.width=5
+audio.stereo.enabled=false
+visualizer.spectrum.smoothing.mode=monstercat
+visualizer.spectrum.bar.spacing=1
