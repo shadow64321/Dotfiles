@@ -1,4 +1,5 @@
 " Vim Config File "
+" Should be placed in home folder "
 
 " Enable Mouse Support "
 set mouse=a
