@@ -10,7 +10,8 @@ if status is-interactive
     alias update='sudo nixos-rebuild switch'
     alias sysedit='sudo vim /etc/nixos/configuration.nix'
     alias sysview='bat /etc/nixos/configuration.nix'
-    alias sysprogs='bat /etc/current-system-packages'
+    alias syspacks='bat /etc/current-system-packages'
+    alias rename='mv'
     # neofetch
     cowsay "Life is like a weiner, sometimes it gets hard for no reason" | lolcat
 end
