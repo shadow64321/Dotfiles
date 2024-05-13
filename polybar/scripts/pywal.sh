@@ -14,7 +14,7 @@ pywal_get() {
 # Change colors
 change_color() {
   # Alacritty
-  ./$AFILE
+  bash $AFILE
 
 	# polybar
 	sed -i -e "s/background = #.*/background = $BG/g" $PFILE
