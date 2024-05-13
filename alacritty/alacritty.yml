@@ -27,6 +27,7 @@ font:
   size: 11
 draw_bold_text_with_bright_colors: true
 
+# Commented out so that pywal2alacrittyyml.sh can set colors
 #colors:
 #    primary:
 #        background: "#1E1E2E" # base
@@ -106,39 +107,10 @@ draw_bold_text_with_bright_colors: true
 #        - { index: 16, color: "#FAB387" }
 #        - { index: 17, color: "#F5E0DC" }
 #
-#key_bindings:
-#  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
+key_bindings:
+  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
 
 # BEGIN ACE
-window:
-  padding:
-    x: 5
-    y: 5
-  class:
-    instance: Alacritty
-    general: Alacritty
-  opacity: 0.7
-
-scrolling:
-  history: 10000
-  multiplier: 3
-
-font:
-  normal:
-    family: FiraCode Nerd Font
-    style: Medium
-  bold:
-    family: FiraCode Nerd Font
-    style: Bold
-  italic:
-    family: FiraCode Nerd Font
-    style: MediumItalic
-  bold_italic:
-    family: FiraCode Nerd Font
-    style: BoldItalic
-  size: 11
-draw_bold_text_with_bright_colors: true
-
 colors:
   primary:
     background: '#131a18'
@@ -164,7 +136,4 @@ colors:
     magenta:    '#EDBC6D'
     cyan:       '#6D8282'
     white:      '#dcd5c6'
-
-key_bindings:
-  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
 # END ACE
