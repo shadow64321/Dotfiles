@@ -4,7 +4,6 @@ if status is-interactive
     alias music='musikcube'
     alias fishy='asciiquarium'
     alias rfishy='asciiquarium | lolcat'
-    # alias uwu='fastfetch'
     alias sysinf='btop'
     alias ascii='ascii-image-converter'
     alias update='sudo nixos-rebuild switch'
