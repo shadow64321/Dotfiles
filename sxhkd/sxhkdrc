@@ -9,6 +9,11 @@ super + Return
   alacritty
 
 
+# Theme Swap
+super + r
+  rebsp
+
+
 # Rofi
 super + @space
   rofi -show drun

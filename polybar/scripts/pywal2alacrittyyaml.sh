@@ -83,35 +83,6 @@ fi
 # We know $colorX is unset, we set it by sourcing above
 # shellcheck disable=SC2154
 { sed "/^# BEGIN ACE/ r /dev/stdin" "$CFG" > "$tempfile" <<EOF
-window:
-  padding:
-    x: 5
-    y: 5
-  class:
-    instance: Alacritty
-    general: Alacritty
-  opacity: 0.7
-
-scrolling:
-  history: 10000
-  multiplier: 3
-
-font:
-  normal:
-    family: FiraCode Nerd Font
-    style: Medium
-  bold:
-    family: FiraCode Nerd Font
-    style: Bold
-  italic:
-    family: FiraCode Nerd Font
-    style: MediumItalic
-  bold_italic:
-    family: FiraCode Nerd Font
-    style: BoldItalic
-  size: 11
-draw_bold_text_with_bright_colors: true
-
 colors:
   primary:
     background: '$color0'
@@ -137,9 +108,6 @@ colors:
     magenta:    '$color13'
     cyan:       '$color14'
     white:      '$color15'
-
-key_bindings:
-  - { key: Return, mods: Super|Shift, action: SpawnNewInstance }
 EOF
 } && cat "$tempfile" > "$CFG" \
   && rm "$tempfile"
