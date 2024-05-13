@@ -9,9 +9,24 @@ super + Return
   alacritty
 
 
+# Reload sxhkd
+super + Escape
+  pkill -USR1 -x sxhkd
+
+
+# Lockscreen
+super + q
+  betterlockscreen -l dimblur
+
+
 # Theme Swap
 super + r
-  rebsp
+  bash ~/.config/bspwm/set-Theme.sh
+
+
+# Set Fav Theme
+super + shift + r
+  feh --bg-fill ~/.config/hypr/Wallpapers/13.jpg && bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/13.jpg
 
 
 # Rofi
@@ -25,9 +40,9 @@ super + shift + p
   rofi -show power-menu -modi power-menu:rofi-power-menu
 
 
-# Fullscreen
-super + f
-  bspfullscreen
+# Switch between tiled and monocle layout
+super + m
+  bspc desktop -l next
 
 
 # Desktop Switching
@@ -64,10 +79,17 @@ super + g
 
 
 # Volume control
-XF86Audio{RaiseVolume,LowerVolume}
-  wpctl set volume {-l 1.5 @DEFAULT_AUDIO_SINK@ 5%+, @DEFAULT_AUDIO_SINK@ 5%-}
-
+XF86AudioRasieVolume
+  amixer set Master 5%+
+XF86AudioLowerVolume
+  amixer set Master 5%-
+XF86AudioMute
+  amizer set Master {mute, unmute}
 
 # Screenshot
-super + s
-  grim -g "$(slurp)" - | convert - -shave 1x1 PNG:- | swappy -f -
+@Print
+  scrot -s --line mode=edge ~/Pictures/Screenshots/%Y-%m-%d_%H%M%S-$wx$h_scrot.png
+
+# Brightness
+XF86MonBrightness{up,down}
+  brightnessctl set 355{+,-}
