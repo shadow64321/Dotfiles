@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 
-# ~/.config/bspwm/launch.sh
+
+# Random Wallpaper - idk why it works but it does
+WALLPAPER='Xiao Lonely.jpg' &
+feh --bg-fill ~/.config/hypr/Wallpapers/$WALLPAPER &
+bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/$WALLPAPER &
+
+# Solid Wallpaper
+#feh --bg-fill ~/.config/hypr/Wallpapers/'Wallpaper.jpg' &
+#bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/'Wallpaper.jpg' &
+
 
 # Autostart
 # pgrep -x sxhkd > /dev/null || sxhkd &
@@ -8,7 +17,6 @@ sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
 bsp-layout set tall &
 pkill picom &
 picom --experimental-backends &
-feh --bg-fill ~/.config/hypr/Wallpapers/Nezuko.jpg &
 polybar &
 
 # Monitor
