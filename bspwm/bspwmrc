@@ -7,8 +7,8 @@ feh --bg-fill ~/.config/hypr/Wallpapers/$WALLPAPER &
 bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/$WALLPAPER &
 
 # Solid Wallpaper
-#feh --bg-fill ~/.config/hypr/Wallpapers/'Wallpaper.jpg' &
-#bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/'Wallpaper.jpg' &
+#feh --bg-fill ~/.config/hypr/Wallpapers/'get on my level hoe.jpg' &
+#bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/'get on my level hoe.jpg' &
 
 
 # Autostart

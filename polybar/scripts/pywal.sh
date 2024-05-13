@@ -4,6 +4,7 @@
 PFILE="$HOME/.config/polybar/colors.ini"
 RFILE="$HOME/.config/polybar/scripts/rofi/colors.rasi"
 WFILE="$HOME/.cache/wal/colors.sh"
+AFILE="$HOME/.config/polybar/scripts/pywal2alacrittyyaml.sh"
 
 # Get colors
 pywal_get() {
@@ -12,6 +13,9 @@ pywal_get() {
 
 # Change colors
 change_color() {
+  # Alacritty
+  ./$AFILE
+
 	# polybar
 	sed -i -e "s/background = #.*/background = $BG/g" $PFILE
 	sed -i -e "s/foreground = #.*/foreground = $FG/g" $PFILE
