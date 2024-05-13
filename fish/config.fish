@@ -12,7 +12,7 @@ if status is-interactive
     alias syspacks='bat /etc/current-system-packages'
     alias rename='mv'
     alias rebsp='bash ~/.config/bspwm/bspwmrc'
-    alias ts='bash ~/.config/bspwm/set-Theme.sh'
+    alias binds='bat ~/.config/sxhkd/sxhkdrc'
     # neofetch
     cowsay "Life is like a weiner, sometimes it gets hard for no reason" | lolcat
 end
