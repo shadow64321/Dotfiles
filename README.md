@@ -9,3 +9,4 @@
 
 # Vim
   - Move .vimrc to ~
+  - Learn how to exit vim
