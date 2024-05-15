@@ -24,10 +24,19 @@ super + r
   bash ~/.config/bspwm/set-Theme.sh
 
 
-# Set Fav Theme
-super + shift + r
+# Set Fav Themes
+super + shift + j
   feh --bg-fill ~/.config/hypr/Wallpapers/13.jpg && bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/13.jpg
 
+
+super + shift + k
+  feh --bg-fill ~/.config/hypr/Wallpapers/26.jpg && bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/26.jpg
+
+super + shift + h
+  feh --bg-fill ~/.config/hypr/Wallpapers/29.jpg && bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/29.jpg
+
+super + shift + l
+  feh --bg-fill ~/.config/hypr/Wallpapers/9.jpg && bash ~/.config/polybar/scripts/pywal.sh ~/.config/hypr/Wallpapers/9.jpg
 
 # Rofi
 super + @space
@@ -93,7 +102,7 @@ super + shift + {Left,Down,Up,Right}
 
 
 # Volume control
-XF86AudioRasieVolume
+XF86AudioRaiseVolume
   amixer set Master 5%+
 XF86AudioLowerVolume
   amixer set Master 5%-
@@ -111,5 +120,6 @@ ctrl + @Print
 
 
 # Brightness
-XF86MonBrightness{up,down}
-  brightnessctl set 355{+,-}
+#XF86MonBrightness{up,down}
+super + b + {u,d}
+  brightnessctl set 1000{+,-}
